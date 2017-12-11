@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>cuba-travel</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</head>
+  <body>
+    <div class="container">
+      <div id="registerContent">
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>THERE HAS NEVER BEEN A BETTER TIME TO TRAVEL TO CUBA</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <form id="placeForm">
+                <div class="row">
+          				<div class="col">
+          					<div class="form-group">
+                      <input type="text" name="placeName" id="placeName" class="form-control input-sm" placeholder="Place Name">
+          					</div>
+          				</div>
+          				<div class="col">
+          					<div class="form-group">
+          						<input type="text" name="location" id="location" class="form-control input-sm" placeholder="Location">
+          					</div>
+          				</div>
+          			</div>
+                <div class="row">
+          				<div class="col">
+          					<div class="form-group">
+                      <input type="text" name="landmarks" id="landmarks" class="form-control input-sm" placeholder="Landmarks">
+          					</div>
+          				</div>
+                </div>
+                <div class="row">
+          				<div class="col">
+          					<div class="form-group">
+          						<input type="date" name="timeYearStart" id="timeYearStart" class="form-control input-sm" placeholder="Hot season start">
+          					</div>
+          				</div>
+                  <div class="col">
+          					<div class="form-group">
+          						<input type="date" name="timeYearEnd" id="timeYearEnd" class="form-control input-sm" placeholder="Hot season end">
+          					</div>
+          				</div>
+          			</div>
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+              				<input type="textarea" name="email" id="email" class="form-control input-sm" placeholder="description">
+              			</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3">
+                    <input type="submit" value="Register" class="btn btn-info btn-block">
+                  </div>
+                  <div class="col-md-3">
+                    <button type="button" id="placesList" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Launch demo modal</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal fade" id="myModal" role="dialog" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="col">
+                      <h2>Places:</h2>
+                      <ul id="places">
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <div id="show-place">
+                        <h2></h2>
+                        <p>Name: <span class="name"></span></p>
+                        <p>Location: <span class="location"></span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
